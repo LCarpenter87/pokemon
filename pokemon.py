@@ -80,7 +80,7 @@ st.audio(details['cry'], format="audio/wav", start_time=0, sample_rate=None)
 moves_markdown = '\n'.join("* **{}**".format(move) for move in details['moves'])
 
 st.write(f'Move Count: {details["move_count"]}')
-with st.extender("View Moves"):
+with st.expander("View Moves"):
 	st.write(moves_markdown)
 
 st.pyplot(fig)
